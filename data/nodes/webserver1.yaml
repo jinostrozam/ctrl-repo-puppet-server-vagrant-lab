@@ -1,0 +1,20 @@
+---
+  classes:
+    - roles::default
+    - profiles::ntp
+    - profiles::ssh
+    - profiles::sudoers
+    - profiles::timezone
+    - profiles::users
+  users:
+    'jorge':
+      comment: 'Jorge Molina'
+      uid: '1011'
+      sshkeys:
+        - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1IvXl3fvtP+3Y3G5le5Xdt2lvGbnTkrRfuM856pfVuciEZiTOtObD2otlLCFg48lQSb4acONTgeObSphcYPz98f5sIASASvZ6BVBDu6yGLfu6MTbA5nkMpnU18iZj+XejHLTgcJ7dw4jSs3bD1SLd2q0vwpuh+CdIUQorPRFY4a/wXZ2wMcPEtNZciq4fhE1zJCEYl+JC2Tzto1uOQ5YbI7VpvGZVLrtA4IkxGL5Ni7h/0u40huLl3xJJbCTN4zzYaX5kSzV40cFZaAnRMhVa/IAzx00JO9P95JBnQqxqedSYwcnUZKGPNimKVZUjHxOO9/QWLUlmfWilrLiVFfJR jorge'
+  allow_users:
+    - 'jorge'
+    - 'vagrant'
+  sudoers:
+    - 'jorge'
+    - 'vagrant'
