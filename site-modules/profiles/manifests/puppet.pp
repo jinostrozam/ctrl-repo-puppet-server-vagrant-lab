@@ -13,7 +13,7 @@ class profiles::puppet {
   }
 
   file { '/usr/local/bin/run-puppet':
-    source => 'puppet:///modules/profile/puppet/run-puppet.sh',
+    source => 'puppet:///modules/profiles/puppet/run-puppet.sh',
     mode   => '0755',
   }
 }
