@@ -1,6 +1,7 @@
 ---
   classes:
     - profiles::ntp
+    - profiles::puppet
     - profiles::ssh
     - profiles::sudoers
     - profiles::timezone
