@@ -1,6 +1,6 @@
 # Set up Puppet config and cron run
 class profiles::puppet {
-  service { ['puppet', 'mcollective', 'pxp-agent']:
+  service { ['puppet', 'pxp-agent']:
     ensure => running,
     enable => true,
   }

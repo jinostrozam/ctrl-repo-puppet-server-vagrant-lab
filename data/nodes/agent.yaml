@@ -1,6 +1,10 @@
 ---
   classes:
     - roles::agent
+    - profiles::ntp
+    - profiles::ssh
+    - profiles::sudoers
+    - profiles::timezone
     - profiles::users
   users:
     'jorge':
